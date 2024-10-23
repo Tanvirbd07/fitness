@@ -351,7 +351,7 @@ nav a {
 
 .bmi-chart-content {
     display: flex;
-    
+
 }
 
 .bmi-chart {
@@ -371,7 +371,8 @@ nav a {
 }
 
 .bmi p,
-.bmi-calculator p {
+.bmi-calculator p,
+.team p {
     color: rgba(255, 255, 255, 0.5);
     font-size: 1rem;
 }
@@ -403,6 +404,98 @@ nav a {
 .bmi-calculator h2 {
     font-size: 2.5rem;
     color: rgb(255, 255, 255)
+}
+
+.team h3 {
+    font-size: 3rem;
+    color: rgb(255, 255, 255)
+}
+
+.team {
+    margin: 4rem 7rem;
+    text-align: center;
+}
+
+.team-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 38rem;
+    gap: 1rem;
+    border-radius: 18px;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    margin-top: 3rem;
+}
+
+.team-card-1 {
+    background: url(../images/trainer1.png);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    border-radius: 0.8rem;
+}
+
+.team-card-2 {
+    background: url(../images/trainer2.png);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    border-radius: 0.8rem;
+}
+
+.team-card-3 {
+    background: url(../images/trainer3.png);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    border-radius: 0.8rem;
+}
+
+.team-card-4 {
+    background: url(../images/trainer4.png);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    border-radius: 0.8rem;
+}
+
+.team-card-5 {
+    background: url(../images/trainer5.png);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    border-radius: 0.8rem;
+}
+
+.team-card-6 {
+    background: url(../images/trainer6.png);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    border-radius: 0.8rem;
+}
+
+.team-background {
+    background: rgba(0, 0, 0, 0.2);
+    height: 100%;
+    position: relative;
+}
+
+.team-text {
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+}
+
+.team-text h3 {
+    margin: 0;
+    text-align: start;
+    font-size: 1.2rem;
+}
+
+.team-text p {
+    font-size: 1rem;
+    text-align: start;
 }
 
 @media screen and (max-width:576px) {
@@ -582,30 +675,46 @@ nav a {
         font-size: 1rem;
         font-weight: 500;
     }
+
     .calculator {
         margin: 2rem 2rem;
         padding: 2rem 0;
         gap: 2rem;
         flex-direction: column;
     }
+
     .bmi-chart {
         width: 100%;
-        
-    } 
-    .bmi-chart-content{
-    justify-content: center;
-    align-items: center;
-    }  
-    .bmi-calculator{
+
+    }
+
+    .bmi-chart-content {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bmi-calculator {
         width: 100%;
     }
-    .input{
+
+    .input {
         width: 50%;
     }
+
     .bmi {
         border: 1px solid rgba(255, 255, 255, 0.5);
         width: auto;
         padding-inline: 1rem;
+    }
+    .team {
+        margin: 2rem 2rem;
+        text-align: center;
+    }
+    
+    .team-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        height: 98rem;
     }
 
 }
