@@ -37,7 +37,9 @@ nav a {
     justify-content: space-around;
     align-items: center;
 }
-
+.menu-icon{
+    display: none;
+}
 .nav-links>div {
     border-radius: 1.5rem;
     padding: 0.4rem 0.8rem;
@@ -372,7 +374,7 @@ nav a {
 
 .bmi p,
 .bmi-calculator p,
-.team p {
+.team p , footer p{
     color: rgba(255, 255, 255, 0.5);
     font-size: 1rem;
 }
@@ -497,12 +499,62 @@ nav a {
     font-size: 1rem;
     text-align: start;
 }
-
+footer{
+    background: rgba(255, 255, 255, 0.1);
+    /* height: 30rem; */
+}
+.footer{
+    margin: 0 7rem;
+    padding-block: 3rem;
+    display: flex;
+}
+.footer h2{
+color: rgb(230, 83, 60);
+font-size: 4rem;
+font-weight: 800;
+}
+.footer p{
+    line-height: 2rem;
+}
+.footer-text{
+    width: 50%;
+}
+.footer-links{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-links h3{
+ color: rgb(255, 255, 255);
+font-size: 1.8rem;
+font-weight: 700;
+}
+.footer-anchor{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.footer-anchor a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+}
+.copywrite{
+    margin: 0 7rem;
+    padding-block: 1rem;
+    text-align: center;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    
+}
 @media screen and (max-width:576px) {
     .nav-links {
         display: none;
     }
-
+    .menu-icon{
+        display: flex;
+        color:rgb(255, 255, 255) ;
+        font-size: 2rem;
+    }
     nav,
     .banner {
         padding: 0 2rem;
@@ -716,5 +768,25 @@ nav a {
         grid-template-columns: repeat(1, 1fr);
         height: 98rem;
     }
-
+    .footer {
+        margin: 0 2rem;
+        padding-block: 2rem;
+        flex-direction: column;
+    }
+    .footer h2{
+    color: rgb(230, 83, 60);
+    font-size: 3rem;
+    font-weight: 800;
+    }
+    .footer-text{
+        width: 100%;
+    }
+    .footer-links{
+        width: 100%;
+        flex-direction: column;
+    }
+    .copywrite{
+        margin: 0 2rem;
+        padding-block: 0.5rem; 
+    }
 }
