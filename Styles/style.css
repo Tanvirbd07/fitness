@@ -184,6 +184,43 @@ nav a {
     width: 100%;
 }
 
+.hero {
+    border-radius: 1.5rem;
+    background: rgb(34, 34, 34);
+    margin: 4rem 7rem;
+    display: flex;
+}
+
+.hero-text {
+    width: 50%;
+    padding: 2rem;
+}
+
+.hero-text h3 {
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 900;
+    margin-top: 0;
+}
+
+.hero-text p {
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0;
+}
+
+.hero-image {
+    width: 50%;
+    padding: 2rem;
+
+}
+
+.hero-image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 1.5rem;
+    zoom: 50%;
+}
+
 @media screen and (max-width:576px) {
     .nav-links {
         display: none;
@@ -289,5 +326,28 @@ nav a {
         border: 2px solid gray;
         height: 100%;
         width: 100%;
+    }
+
+    .hero {
+        margin: 2rem 2rem;
+        flex-direction: column;
+    }
+
+    .hero-text {
+        width: 80%;
+        padding: 2rem;
+    }
+
+    .hero-text h3 {
+        font-size: 2.5rem;
+    }
+
+    .hero-text button {
+        width: 100%;
+    }
+
+    .hero-image {
+        width: 80%;
+        padding: 2rem;
     }
 }
