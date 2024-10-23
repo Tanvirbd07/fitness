@@ -3,7 +3,7 @@
 body {
     max-width: 1440px;
     margin: 0 auto;
-    background: #1e1e1e;
+    background: #000000ec;
     font-family: "Inter", sans-serif;
 }
 
@@ -148,6 +148,42 @@ nav a {
     font-size: 1rem;
 }
 
+.habit {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 4rem 7rem;
+
+}
+
+.habit h3 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.habit p {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.habit-content {
+    display: flex;
+    margin-top: 3rem;
+}
+
+.habit-card {
+    height: auto;
+    width: 22%;
+    margin: 2rem;
+
+
+}
+
+.card-image img {
+    border-radius: 100%;
+    border: 2px solid gray;
+    height: 100%;
+    width: 100%;
+}
+
 @media screen and (max-width:576px) {
     .nav-links {
         display: none;
@@ -190,7 +226,7 @@ nav a {
         padding-inline: 0.8rem;
         padding-block: 0.5rem;
         width: 30%;
-        
+
     }
 
     .banner-item-2 h3 {
@@ -198,20 +234,60 @@ nav a {
         font-weight: 900;
         margin: 0;
     }
-    .banner-item-2 p{
+
+    .banner-item-2 p {
         display: block;
     }
-    .banner-img{
+
+    .banner-img {
         margin-top: 3rem;
     }
-    
-    .banner-item-text h6{
+
+    .banner-item-text h6 {
         font-size: 1.2rem;
     }
-    .banner-item-text p{
+
+    .banner-item-text p {
         font-size: 0.8rem;
     }
-    .banner-item-1{
+
+    .banner-item-1 {
         width: 40%;
+    }
+
+    .habit {
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 0rem 2rem;
+
+    }
+
+    .habit h3 {
+        font-size: 2.5rem;
+        font-weight: 900;
+    }
+
+    .habit p {
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    .habit-content {
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+
+    .habit-card {
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .card-image img {
+        border-radius: 100%;
+        border: 2px solid gray;
+        height: 100%;
+        width: 100%;
     }
 }
